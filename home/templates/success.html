@@ -1,0 +1,19 @@
+{% extends 'base.html' %}
+
+{% block content %}
+    <div class="container">
+        <br/>
+        <h2> I comment na chu database ah a awm ta.</h2>
+        <br/>
+        <br/><br/>
+        <br/><hr/><br/>
+        <div class="d-grid gap-2 col-6 mx-auto">
+          <a href="{% url 'home' %}" class="btn btn-primary" type="button">Home</a>
+          <a href="{% url 'contact' %}" class="btn btn-primary" type="button">Contact</a>
+          <a href="{% url 'about' %}" class="btn btn-primary" type="button">About</a>
+          <a href="{% url 'thlalak-page' %}" class="btn btn-primary" type="button">Thlalak</a>
+          <a href="{% url 'comment' %}" class="btn btn-primary" type="button">Comment leh ngal</a>
+        </div>
+    </div>
+{% endblock %}
+

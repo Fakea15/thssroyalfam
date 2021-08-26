@@ -1,0 +1,60 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block content %}
+<div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel">
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+      <img src="{% static 'home/images/royal_family.png' %}" class="d-block w-100" alt="...">
+      <div class="carousel-caption d-md-block">
+        <h1>Welcome To THSS Royal Family Web</h1>
+      </div>
+    </div>
+    <div class="carousel-item">
+      <img src="{% static 'home/images/school.png' %}" class="d-block w-100" alt="...">
+      <div class="carousel-caption d-md-block">
+        <h1>Work is Prayer</h1>
+      </div>
+    </div>
+    <div class="carousel-item">
+      <img src="{% static 'home/images/mawina.png' %}" class="d-block w-100" alt="...">
+      <div class="carousel-caption d-md-block">
+        <h1>Rihdil kan khamlo</h1>
+      </div>
+    </div>
+  </div>
+</div>
+<hr/>
+<!-- Aleart! -->
+<div class="alert alert-danger alert-dismissible fade show" role="alert" style="margin: 10px;">
+  <strong>CHIBAI! </strong>He web hi professional siam a nih loh avangin lo beisei sang
+  vak lo la, thiam ang tawkin latest technology nen update zel a la ni dawn e, I lo visit visit ve fo dawn nia.
+  <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+</div>
+<!-- Words -->
+<div class="alert alert-success" role="alert" style="margin: 5px;">
+  <h4 class="alert-heading" style="text-decoration: underline;">Royal Kan ni</h4>
+  <p>Ropui ber chu kan ni lo, nimahsela badge dawng zawng zawng aiin kan tour naah
+    kan che royal zawk. Khawngaihin a hnuaia content ho khi
+  lo en chiang ve teh.</p>
+  <hr>
+  <div class="mb-0">
+    <a href="{% url 'contact' %}" style="text-decoration: none;">contact |</a>
+    <a href="{% url 'about' %}" style="text-decoration: none;">about |</a>
+    <a href="{% url 'thlalak-page' %}" style="text-decoration: none;">thlalak |</a>
+    <a href="{% url 'comment' %}" style="text-decoration: none;">comment </a>
+  </div>
+</div>
+<br/><br/>
+
+<center>
+  <div class="card text-white bg-success mb-3" style="margin: 5px;">
+    <div class="card-header">No. of THSS Royal Student</div>
+    <div class="card-body ">
+      <h1 class="card-title">{{ class_zat }}</h1>
+    </div>
+  </div>
+
+</center>
+
+{% endblock %}
