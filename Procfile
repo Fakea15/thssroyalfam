@@ -1,0 +1,1 @@
+web: gunicorn thss.wsgi
